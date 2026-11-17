@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan, Together — Autumn 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#home">JAPAN<span>,</span> TOGETHER.</a>
+  <nav class="toplinks">
+    <a href="#overview">The route</a>
+    <a href="#budget">Budget</a>
+    <a href="#day1">Itinerary</a>
+  </nav>
+</header>
+
+<nav class="side-nav" id="sideNav" aria-label="Page navigation"></nav>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">A journey through Japan · Autumn 2027</div>
+    <h1>Japan,<br><em>together.</em></h1>
+    <p>Thirteen days. Two travellers. One unforgettable journey through autumn streets, quiet temples, mountain views and the city that never sleeps.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#overview">Explore the journey</a>
+      <a class="btn ghost" href="#day1">Start day one</a>
+    </div>
+    <div class="hero-meta">
+      <div><strong>13</strong><span>Days</span></div>
+      <div><strong>6</strong><span>Destinations</span></div>
+      <div><strong>RM25K</strong><span>Target budget</span></div>
+    </div>
+  </div>
+  <div class="scroll-note">Scroll to begin ↓</div>
+</section>
+
+<section class="overview" id="overview">
+  <div class="eyebrow">The journey at a glance</div>
+  <h2>From neon nights<br>to mountain mornings.</h2>
+  <p class="panel-intro">Our route begins in Osaka, takes us through Nara and Kyoto, then into the landscapes of Hakone and Mount Fuji before ending in Tokyo. Dates are a working plan for late November to early December 2027.</p>
+
+  <div class="route-grid">
+    <div class="route-item"><small>01 · Days 1–4</small><h3>Osaka</h3><p>Street food, Dotonbori, Shinsaibashi, Universal Studios and the aquarium.</p></div>
+    <div class="route-item"><small>02 · Day 3</small><h3>Nara</h3><p>A relaxed afternoon with Nara Park, Todai-ji and the old town.</p></div>
+    <div class="route-item"><small>03 · Days 5–7</small><h3>Kyoto</h3><p>Traditional streets, shrines, bamboo groves and autumn scenery.</p></div>
+    <div class="route-item"><small>04 · Day 8</small><h3>Hakone</h3><p>Lake Ashi, mountain scenery and a ryokan stay.</p></div>
+    <div class="route-item"><small>05 · Day 9</small><h3>Kawaguchiko</h3><p>Lake views, Oishi Park and the chance to see Mount Fuji.</p></div>
+    <div class="route-item"><small>06 · Days 10–13</small><h3>Tokyo</h3><p>Shibuya, Asakusa, Harajuku, Ginza and the journey home.</p></div>
+  </div>
+</section>
+
+<main id="itinerary"></main>
+
+<section class="weather-section" id="weather">
+  <div class="weather-heading">
+    <span class="section-kicker">BE PREPARED</span>
+    <h2>Weather & What to Wear</h2>
+    <p>A seasonal temperature guide for our Japan journey. Check the live forecast closer to departure.</p>
+  </div>
+
+  <div class="weather-notice">
+    <strong>Planning note</strong>
+    <p>These are broad late-autumn and early-winter estimates, not a forecast for November–December 2027. Mountain areas can feel considerably colder, especially in the morning and evening.</p>
+  </div>
+
+  <div class="weather-grid" id="weatherGrid"></div>
+
+  <p class="weather-source">
+    For official forecasts closer to departure:
+    <a href="https://www.jma.go.jp/bosai/forecast/" target="_blank" rel="noopener">Japan Meteorological Agency</a>
+  </p>
+</section>
+
+<section class="budget-section" id="budget">
+  <div class="eyebrow">The financial plan</div>
+  <h2>Save for the memories.</h2>
+  <p class="panel-intro">Our working target is RM25,000 for two people. The figures below are planning estimates, not confirmed 2027 prices. Update the savings slider as your trip fund grows.</p>
+
+  <div class="budget-grid">
+    <div class="budget-list">
+      <div class="budget-row"><span>Flights (two people)</span><strong>RM4,500</strong></div>
+      <div class="budget-row"><span>Hotels (12 nights)</span><strong>RM5,200</strong></div>
+      <div class="budget-row"><span>Transport</span><strong>RM2,500</strong></div>
+      <div class="budget-row"><span>Food</span><strong>RM2,650</strong></div>
+      <div class="budget-row"><span>Attractions & tickets</span><strong>RM1,100</strong></div>
+      <div class="budget-row"><span>Insurance & eSIM</span><strong>RM400</strong></div>
+      <div class="budget-row"><span>Shopping allowance</span><strong>RM6,000</strong></div>
+      <div class="budget-row"><span>Emergency reserve</span><strong>RM2,150</strong></div>
+      <div class="budget-row"><strong>Total target</strong><strong>RM25,000</strong></div>
+    </div>
+
+    <div class="savings-box">
+      <div class="eyebrow">Savings tracker · MYR</div>
+      <h3>Our Japan fund</h3>
+      <p>Move the slider to update your savings progress. The suggested combined saving pace is RM2,000 per month.</p>
+      <label for="saved">Current savings</label>
+      <input type="range" min="0" max="25000" step="100" value="0" id="saved">
+      <div class="savings-amount" id="savedAmount">RM0</div>
+      <div class="progress"><div id="progressBar"></div></div>
+      <p id="progressText">0% of our RM25,000 goal</p>
+      <p class="small-note">At RM2,000 combined per month, 12 months adds RM24,000. Add RM1,000 to reach the target. Keep the emergency reserve separate from shopping money.</p>
+    </div>
+  </div>
+</section>
+
+<section class="footer">
+  <div class="eyebrow">The best is yet to come</div>
+  <h2>See you in Japan.</h2>
+  <p>NOVEMBER – DECEMBER 2027 · MADE FOR TWO</p>
+  <button class="btn ghost" onclick="openChange()">Suggest a change</button>
+</section>
+
+<div class="modal-bg" id="changeModal">
+  <div class="modal">
+    <div class="eyebrow">Update the travel journal</div>
+    <h2>Suggest a change.</h2>
+    <p>Describe what you'd like to change. Copy the request and paste it into our ChatGPT conversation so I can update the website code for you.</p>
+    <textarea id="changeText" placeholder="Example: Move Osaka Aquarium to Day 2 and add more time for shopping in Shinsaibashi..."></textarea>
+    <div class="modal-actions">
+      <button class="btn" onclick="copyChange()">Copy request</button>
+      <button class="btn ghost modal-close-btn" onclick="closeChange()">Close</button>
+    </div>
+    <p id="copyStatus"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
